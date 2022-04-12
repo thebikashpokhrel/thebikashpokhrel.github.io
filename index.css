@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Francois+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Secular+One&display=swap');
+:root{
+    --primary:#ff3138;
+    --font-title:'Francois One', sans-serif;
+    --dark:rgb(41, 41, 41);
+}
+html,body{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    background-color: var(--primary);
+    overflow: hidden;
+}
+#particles-wrapper{
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+.flex-layout{
+    max-height: 100%;
+    margin: 0;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    align-items: center;
+    width:100%;
+}
+.card{
+    background-color: white;
+    margin: 10px;
+    font-size: 20px;
+    padding: 10px;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    border-radius: 8px;
+    z-index:2;
+}
+.intro-card{
+    padding:15px;
+    width: 50%;
+}
+.profile{
+    display: flex;
+    align-items: center;
+}
+.profile-txt{
+    justify-self: flex-start;
+    margin-left: 10px;
+}
+.intro-card .profile-img{
+    text-align: center;
+}
+.intro-card .profile-img img{
+    width:120px;
+    height: auto;
+}
+.intro-card .intro-title{
+    margin: 0;
+    color:var(--primary);
+    font-family: var(--font-title);
+}
+.intro-card .intro-sub{
+    margin: 0;
+    color:rgb(97, 97, 97);
+    font-size: 17px;
+    font-family: 'Secular One';
+}
+.intro-card .intro-txt{
+    font-family:'Secular One';
+    color:var(--dark);
+    font-size: 17px;
+}
+.social-icons{
+    display: flex;
+    margin-top: 8px;
+}
+.social-icons a{color:black}
+.icon-fb ,.icon-github,.icon-instagram,.icon-linkedin{
+    font-size: 20px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.icon-fb:hover{color:#4267B2}
+.icon-instagram:hover{color:rgb(255, 62, 19)}
+.icon-linkedin:hover{color:#0072b1}
+.intro-card .email-btn{
+    outline: 0;
+    border: 1px solid var(--primary);
+    padding: 10px 5px;
+    display: block;
+    margin: auto;
+    box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+    margin-top: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: .4s;
+}
+.skills-card {
+    width: 50%;
+}
+.skills-card .title{
+    font-size: 24px;
+    font-family: var(--font-title);
+    position: relative;
+    margin-bottom: 15px;
+}
+.skills-card .title:after{
+    content:"";
+    width:55px;
+    height:4px;
+    background-color: var(--primary);
+    position: absolute;
+    left:0;
+    bottom:-3px;
+    border-radius: 4px;
+}
+.skills-showcase{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-gap:15px;
+}
+.showcase-card{
+    width: auto;
+    display: flex;
+    align-items: center;
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0 3px 6px rgba(139, 139, 139, 0.16), 0 3px 6px rgba(134, 134, 134, 0.23);
+    padding: 5px;
+    color:var(--dark);
+    font-family: "Secular One";
+    height: 40px;
+    transition: .2s;
+}
+.showcase-card img{
+    margin-right: 4px;
+    width: 30px;
+    height: 30px;
+}
+.showcase-card:hover{
+    box-shadow: 0 3px 6px rgba(66, 66, 66, 0.16), 0 3px 6px rgba(78, 77, 77, 0.23);;
+}
+.projects-card{
+    min-width: 50%;
+    width: auto;
+}
+.copyright{
+    font-family: arial;
+    font-size: 20px;
+    position: absolute;
+    z-index:3;
+    top:93%;
+    color:white;
+}
+@media (max-width:968px){
+    .intro-card{
+        width:auto;
+    }
+    .intro-card .profile-img img{
+        width:60px;
+    }
+    .intro-card .intro-title{
+        font-size: 23px;
+    }
+    .intro-card .intro-sub{
+        font-size: 15px;
+    }
+    .intro-card .intro-txt{
+        font-size: 15px;
+    }
+    .social-icons{
+        margin-top: 3px;
+    }
+    .social-icons a i{
+        font-size: 17px;
+    }
+    .skills-card{
+        min-width: 60%;
+        width: auto;
+    }
+    .skills-showcase{
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5px;
+    }
+    .showcase-card{
+        font-size: 15px;
+    }
+}
