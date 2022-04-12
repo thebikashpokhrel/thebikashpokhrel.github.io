@@ -149,9 +149,7 @@ html,body{
 .copyright{
     font-family: arial;
     font-size: 20px;
-    position: absolute;
-    z-index:3;
-    top:93%;
+   margin-top:5px;
     color:white;
 }
 @media (max-width:968px){
