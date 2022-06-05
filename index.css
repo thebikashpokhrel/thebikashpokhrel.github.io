@@ -55,6 +55,7 @@ html,body{
 .intro-card .profile-img img{
     width:120px;
     height: auto;
+    border-radius:50%;
 }
 .intro-card .intro-title{
     margin: 0;
